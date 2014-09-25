@@ -88,12 +88,8 @@ public class BaseOperations {
     }
 
     private int getNumberOfEpisodes(int season) {
-       int count=0;
         List<WebElement> allElements = driver.findElements(By.xpath("//span[contains(text(),\""+season+" сезон \")]"));
-        for (WebElement element: allElements){
-            count++;
-        }
-      return count;
+      return allElements.size();
     }
 
     public void verifyUserLoggedIn(String message) {
