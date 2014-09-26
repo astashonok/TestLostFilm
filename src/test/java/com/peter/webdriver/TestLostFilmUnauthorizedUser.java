@@ -33,7 +33,7 @@ public class TestLostFilmUnauthorizedUser {
         driver.get("http://www.lostfilm.tv/");
         agent.verifyUserLoggedOut();
         agent.selectSerial("Декстер");
-        agent.openDownloadPage(0, 6);
+        agent.openDownloadPage("guest", 6);
         agent.verifyLoginPopup();
     }
 

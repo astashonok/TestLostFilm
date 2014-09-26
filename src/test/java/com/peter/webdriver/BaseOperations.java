@@ -4,7 +4,6 @@ import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import sun.reflect.generics.reflectiveObjects.NotImplementedException;
 
 import java.util.Iterator;
 import java.util.List;
@@ -45,22 +44,22 @@ public class BaseOperations {
         Thread.sleep(2000);
     }
 
-    public void openDownloadPage(int logged, int season) throws InterruptedException {
-        openDownloadPage(logged, season, "all");
+    public void openDownloadPage(String userType, int season) throws InterruptedException {
+        openDownloadPage(userType, season, "all");
     }
 
 
-    public void openDownloadPage(int logged, int season, String episode) throws InterruptedException {
+    public void openDownloadPage(String userType, int season, String episode) throws InterruptedException {
         String serialId = driver.getCurrentUrl().split("cat=")[1];
         int serialIdInt = Integer.parseInt(serialId);
-        switch (logged) {
-            case 1:
+        switch (userType) {
+            case "user":
                 if (episode == "all")
                     driver.findElement(By.xpath("//td[@onclick=\"ShowAllReleases('" + serialIdInt + "','" + season + "','99')\"]")).click();
                  else
                 driver.findElement(By.xpath("//td[@onclick=\"ShowAllReleases('" + serialIdInt + "','" + season + "','" + episode + "')\"]")).click();
                 break;
-            case 0:
+            case "guest":
                 if (episode == "all")
                     driver.findElement(By.xpath("//td[@onclick[contains(.,\"ShowAllReleases('" + serialIdInt + "','" + season + "','99')\")]]")).click();
                  else driver.findElement(By.xpath("//td[@onclick=\"ShowAllReleases('" + serialIdInt + "','" + season + "','" + episode + "')\"]")).click();
@@ -93,13 +92,12 @@ public class BaseOperations {
     }
 
     public void verifyUserLoggedIn(String message) {
-        boolean present;
+        boolean present = false;
         try {driver.findElement(By.xpath("//a[@class=\"user_menu_link\"][contains(.,\"Выйти\")]"));
             present = true;
         } catch (NoSuchElementException e){
-            present = false;
         }
-        Assert.assertEquals(message, true, present);
+        Assert.assertTrue(message, present);
     }
 
     public void verifyUserLoggedOut() {

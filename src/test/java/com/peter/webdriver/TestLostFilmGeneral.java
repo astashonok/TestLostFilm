@@ -13,7 +13,7 @@ import java.util.Iterator;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
-public class TestLostFilm {
+public class TestLostFilmGeneral {
     static WebDriver driver;
    static BaseOperations agent;
 
@@ -35,31 +35,17 @@ public class TestLostFilm {
     @Test
     public void test1 () throws InterruptedException{
         driver.get("http://www.lostfilm.tv/");
-        agent.login("Simple", "peti2005@gmail.com", "e5bCAY1fga");
+        //agent.login("Simple", "peti2005@gmail.com", "e5bCAY1fga");
         agent.verifyUserLoggedIn("User was not logged in successfully");
         agent.selectSerial("Декстер");
         agent.verifyNumberOfEpisodes("The number is incorrect", 8, 12);
-        agent.openDownloadPage(1, 1);
+        agent.openDownloadPage("user", 1);
         agent.downloadStart();
-        agent.openDownloadPage(1, 5,"02");
+        agent.openDownloadPage("user", 5,"02");
         agent.downloadStart();
         agent.logout();
         agent.verifyUserLoggedOut();
     }
-
-    @Test
-    @Ignore
-    public void test2 () throws InterruptedException{
-        agent.selectSerial("Extant");
-    }
-
-    @Test
-    @Ignore
-    public void test3 () throws InterruptedException{
-        agent.logout();
-        agent.verifyUserLoggedOut();
-    }
-
 
     @AfterClass
     public static void cleanUp(){
