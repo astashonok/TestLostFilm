@@ -100,8 +100,12 @@ public class BaseOperations {
         Assert.assertTrue(message, present);
     }
 
-    public void verifyUserLoggedOut() {
-        driver.findElement(By.xpath("//td/input[@value=' Войти ']"));
+    public void verifyUserLoggedOut(String message) {
+        boolean present = false;
+        try {        driver.findElement(By.xpath("//td/input[@value=' Войти ']"));
+            present = true;
+        } catch (org.openqa.selenium.NoSuchElementException e){}
+        Assert.assertTrue(message,present);
     }
 
     public void verifyLoginPopup() {

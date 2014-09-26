@@ -31,7 +31,7 @@ public class TestLostFilmUnauthorizedUser {
     @Test
     public void testUnauthorizedUserLoad () throws InterruptedException{
         driver.get("http://www.lostfilm.tv/");
-        agent.verifyUserLoggedOut();
+        agent.verifyUserLoggedOut("User is not logged out");
         agent.selectSerial("Декстер");
         agent.openDownloadPage("guest", 6);
         agent.verifyLoginPopup();

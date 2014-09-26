@@ -1,16 +1,11 @@
 package com.peter.webdriver;
 
 import org.junit.*;
-import org.openqa.selenium.By;
-import org.openqa.selenium.Capabilities;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
-import org.openqa.selenium.htmlunit.HtmlUnitDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
-import java.util.Iterator;
-import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
 public class TestLostFilmGeneral {
@@ -35,7 +30,7 @@ public class TestLostFilmGeneral {
     @Test
     public void test1 () throws InterruptedException{
         driver.get("http://www.lostfilm.tv/");
-        //agent.login("Simple", "peti2005@gmail.com", "e5bCAY1fga");
+        agent.login("Simple", "peti2005@gmail.com", "e5bCAY1fga");
         agent.verifyUserLoggedIn("User was not logged in successfully");
         agent.selectSerial("Декстер");
         agent.verifyNumberOfEpisodes("The number is incorrect", 8, 12);
@@ -44,7 +39,7 @@ public class TestLostFilmGeneral {
         agent.openDownloadPage("user", 5,"02");
         agent.downloadStart();
         agent.logout();
-        agent.verifyUserLoggedOut();
+        agent.verifyUserLoggedOut("User is not logged out");
     }
 
     @AfterClass
