@@ -95,7 +95,7 @@ public class BaseOperations {
         boolean present = false;
         try {driver.findElement(By.xpath("//a[@class=\"user_menu_link\"][contains(.,\"Выйти\")]"));
             present = true;
-        } catch (NoSuchElementException e){
+        } catch (org.openqa.selenium.NoSuchElementException e){
         }
         Assert.assertTrue(message, present);
     }

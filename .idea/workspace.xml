@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="22ab9a4a-4aaa-419f-b3c6-d355a83f875b" name="Default" comment="">
-      <change type="MOVED" beforePath="C:\Users\Petro\IdeaProjects\seleniumWebDriverIdea\src\test\java\com\peter\webdriver\TestLostFilm.java" afterPath="$PROJECT_DIR$/src/test/java/com/peter/webdriver/TestLostFilmGeneral.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/peter/webdriver/BaseOperations.java" afterPath="$PROJECT_DIR$/src/test/java/com/peter/webdriver/BaseOperations.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/peter/webdriver/TestLostFilmUnauthorizedUser.java" afterPath="$PROJECT_DIR$/src/test/java/com/peter/webdriver/TestLostFilmUnauthorizedUser.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="seleniumWebDriverIdea.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -28,10 +25,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="TestLostFilmGeneral.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="TestLostFilmGeneral.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/peter/webdriver/TestLostFilmGeneral.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.40159574" vertical-offset="104" max-vertical-offset="595">
+            <state vertical-scroll-proportion="0.0" vertical-offset="104" max-vertical-offset="595">
               <caret line="38" column="32" selection-start-line="38" selection-start-column="32" selection-end-line="38" selection-end-column="32" />
               <folding>
                 <element signature="method#setUp#0;class#TestLostFilmGeneral#0" expanded="false" />
@@ -50,10 +47,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BaseOperations.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="BaseOperations.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/peter/webdriver/BaseOperations.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1239" max-vertical-offset="1700">
+            <state vertical-scroll-proportion="0.661157" vertical-offset="1239" max-vertical-offset="1700">
               <caret line="99" column="44" selection-start-line="99" selection-start-column="44" selection-end-line="99" selection-end-column="44" />
               <folding />
             </state>
@@ -78,8 +75,8 @@
         <option value="$PROJECT_DIR$/src/test/java/com/peter/webdriver/MySecondTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/peter/webdriver/TestLostFilm.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/peter/webdriver/TestLostFilmUnauthorizedUser.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/peter/webdriver/BaseOperations.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/peter/webdriver/TestLostFilmGeneral.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/peter/webdriver/BaseOperations.java" />
       </list>
     </option>
   </component>
@@ -564,7 +561,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1315" height="784" extended-state="1" />
+    <frame x="-8" y="-8" width="1315" height="784" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -946,14 +943,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/peter/webdriver/BaseOperations.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1239" max-vertical-offset="1700">
-          <caret line="99" column="44" selection-start-line="99" selection-start-column="44" selection-end-line="99" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/peter/webdriver/TestLostFilmUnauthorizedUser.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="680">
@@ -964,11 +953,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/peter/webdriver/TestLostFilmGeneral.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.40159574" vertical-offset="104" max-vertical-offset="595">
+        <state vertical-scroll-proportion="0.0" vertical-offset="104" max-vertical-offset="595">
           <caret line="38" column="32" selection-start-line="38" selection-start-column="32" selection-end-line="38" selection-end-column="32" />
           <folding>
             <element signature="method#setUp#0;class#TestLostFilmGeneral#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/peter/webdriver/BaseOperations.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.661157" vertical-offset="1239" max-vertical-offset="1700">
+          <caret line="99" column="44" selection-start-line="99" selection-start-column="44" selection-end-line="99" selection-end-column="44" />
+          <folding />
         </state>
       </provider>
     </entry>
